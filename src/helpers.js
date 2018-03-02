@@ -9,7 +9,7 @@ export function isCorrect(outputs, targets) {
 }
 
 // -> returns 3 if the network predicts a 3
-function getIndexWithHighestValue(outputs) {
+export function getIndexWithHighestValue(outputs) {
   let highestValue = 0;
   let index = 0;
 

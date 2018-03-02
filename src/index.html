@@ -1,9 +1,32 @@
 <html>
+  <head>
+    <style>
+      canvas {
+        width: 28px;
+        height: 28px;
+        margin: 20px;
+        border: 1px solid black;
+      }
+
+      .singleTest {
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
   <body>
     <h1>Mini Neural Network</h1>
     <p>Check console -></p>
     <button id="train">Train</button>
     <button id="test">Test</button>
+    <button id="singleTest">Single Test</button>
+    
+    <div class="singleTest">
+      <canvas id="canvas" style=""></canvas>
+      <span>=&nbsp;</span>
+      <span class="result">?</span>
+    </div>
+
     <script src="./index.js"></script>
   </body>
 </html>

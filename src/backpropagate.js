@@ -31,7 +31,6 @@ export default function backpropagate(layers, targetOutputs, learningRate) {
   // update weights
   [...layers].reverse().forEach(layer => {
     layer.forEach(neuron => {
-      // console.log(neuron.gradient);
       neuron.weights.forEach((weight, index) => {
         const inputValue = neuron.inputs ?
           neuron.inputs[index].getOutput() :

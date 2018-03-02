@@ -1,7 +1,7 @@
 /* not used for now */
 
 // renders a mnist number into a canvas
-export default function renderInput(canvas, data, columns, rows) {
+export default function renderNumber(canvas, data, columns, rows) {
   const context = canvas.getContext('2d');
   
   // Define the image dimensions
